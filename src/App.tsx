@@ -337,7 +337,7 @@ export default function App() {
               </div>
 
               <div className="flex gap-4 pt-8">
-                <a href="https://www.instagram.com/andorinhahipercenter/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-olive transition-colors">
+                <a href="https://www.instagram.com/andorinhahipercenter?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-olive transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a href="#" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-olive transition-colors">
