@@ -336,12 +336,21 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="flex gap-4 pt-8">
-                <a href="https://www.instagram.com/andorinhahipercenter?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-olive transition-colors">
-                  <Instagram className="w-5 h-5" />
+              <div className="flex gap-4 pt-8 relative z-20">
+                <a 
+                  href="https://www.instagram.com/andorinhahipercenter?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-olive transition-colors cursor-pointer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("https://www.instagram.com/andorinhahipercenter?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "_blank", "noopener,noreferrer");
+                  }}
+                >
+                  <Instagram className="w-5 h-5 pointer-events-none" />
                 </a>
                 <a href="#" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-olive transition-colors">
-                  <Facebook className="w-5 h-5" />
+                  <Facebook className="w-5 h-5 pointer-events-none" />
                 </a>
               </div>
             </div>
