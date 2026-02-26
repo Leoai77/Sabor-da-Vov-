@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Fix for "Cannot set property fetch of #<Window> which has only a getter"
+      // This error occurs when a library tries to overwrite window.fetch which might be read-only in some environments.
+      try {
+        if (window.fetch) {
+          Object.defineProperty(window, 'fetch', {
+            writable: true,
+            configurable: true,
+            value: window.fetch
+          });
+        }
+      } catch (e) {
+        console.warn('Failed to make window.fetch writable:', e);
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
